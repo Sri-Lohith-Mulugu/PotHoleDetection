@@ -11,6 +11,7 @@ Upload a road image → choose an AI model → get instant prediction on whether
 ---
 
 ## 🖥️ Demo
+![App Screenshot](Screenshot.png)
 
 > Upload a road image, select ANN or CNN model, and the system returns:
 > - ✅ **Prediction**: Pothole / Normal
