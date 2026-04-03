@@ -26,9 +26,9 @@ const LandingPage = () => {
 
       <section className="hero">
         <div className="hero-text">
-          <h1>Automatic PotHole Detection by CNN and ANN</h1>
+          <h1>Smart Pothole Detection System</h1>
           <p>
-          Our project uses advanced deep learning techniques and computer vision 
+          This project uses advanced deep learning techniques and computer vision 
                 to detect potholes on roads. This helps in efficient road maintenance 
                 and reduces the risk of accidents. The system is trained on a dataset 
                 of road images to accurately classify and locate potholes.
