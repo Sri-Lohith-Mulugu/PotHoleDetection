@@ -1,68 +1,151 @@
-/* Hero section container */
+/* Main Container */
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
   width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e1a 0%, #0d1b2a 60%, #1a2744 100%);
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Buttons at the top */
-.hero-buttons {
+/* Top Navigation */
+.top-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 10px;
+  padding: 16px 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(79, 195, 247, 0.15);
+  background: rgba(10, 14, 26, 0.8);
 }
 
-.button {
-  background-color: #573b8a;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
-  margin: 0 10px;
+.nav-brand {
+  color: #4fc3f7;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+.btn-outline {
+  background: transparent;
+  color: #4fc3f7;
+  border: 1.5px solid #4fc3f7;
+  padding: 8px 22px;
+  font-size: 0.95rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: 0.3s;
+  font-weight: 600;
 }
 
-.button:hover {
-  background-color: #978aae;
+.btn-outline:hover {
+  background-color: rgba(79, 195, 247, 0.1);
 }
 
-/* Hero section layout */
+.btn-solid {
+  background: linear-gradient(135deg, #0288d1, #4fc3f7);
+  color: #0a0e1a;
+  border: none;
+  padding: 8px 22px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.btn-solid:hover {
+  opacity: 0.85;
+}
+
+/* Hero Section */
 .hero {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 70px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  gap: 40px;
 }
 
-/* Text section */
+/* Hero Tag */
+.hero-tag {
+  display: inline-block;
+  background: rgba(79, 195, 247, 0.1);
+  border: 1px solid rgba(79, 195, 247, 0.3);
+  color: #4fc3f7;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+/* Text Section */
 .hero-text {
   flex: 1;
-  padding: 20px;
-  max-width: 50%;
+  max-width: 52%;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  color: #978aae;
-  margin-bottom: 20px;
+  font-size: 2.6rem;
+  color: #e0f7fa;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #fff;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #90a4ae;
+  margin-bottom: 20px;
 }
 
-/* Image section */
+/* Badges */
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.badge {
+  background: rgba(79, 195, 247, 0.08);
+  border: 1px solid rgba(79, 195, 247, 0.25);
+  color: #4fc3f7;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+/* CTA Button */
+.hero-cta {
+  padding: 12px 28px !important;
+  font-size: 1rem !important;
+  border-radius: 8px !important;
+}
+
+/* Image Section */
 .hero-image {
   flex: 1;
   display: flex;
@@ -71,24 +154,68 @@
 }
 
 .hero-image img {
-  width: 80%;
+  width: 90%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(79, 195, 247, 0.2);
+  box-shadow: 0 0 40px rgba(79, 195, 247, 0.1);
 }
 
-/* Responsive Design */
+/* Stats Section */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+  padding: 32px 40px;
+  border-top: 1px solid rgba(79, 195, 247, 0.15);
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 1.8rem;
+  color: #4fc3f7;
+  margin: 0;
+  font-weight: 800;
+}
+
+.stat p {
+  color: #78909c;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(79, 195, 247, 0.2);
+}
+
+/* Responsive */
 @media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
-    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
   }
-
   .hero-text {
     max-width: 100%;
-    padding: 20px;
   }
-
   .hero-image img {
     width: 90%;
+  }
+  .hero-stats {
+    gap: 20px;
+    padding: 24px 20px;
+  }
+  .top-nav {
+    padding: 12px 20px;
   }
 }
